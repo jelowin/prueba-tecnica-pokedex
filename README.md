@@ -5,6 +5,7 @@ Eres nuevo en la isla pokémon, te has trasladado al pueblo Paleta donde han con
 como ingeniero jefe para la nueva Pokédex.
 Tienen preparado un api rest con la información:
 - https://pokeapi.co/docs/v2
+
 Los ingenieros de backend solo saben de servidores, entonces tu trabajo es realizar el
 frontend con React, se puede usar Ant-Design u otras librerías / frameworks para
 componentes como modales, notificaciones, etc, pero siempre se valora más un scss
@@ -29,6 +30,7 @@ agua pues azul.
 ○ Uno aparece a la izquierda con sus habilidades
 ○ El otro aparece a la derecha con sus habilidades
 https://pokeapi.co/docs/v2#abilities
+
 Como eres un ingeniero, se valorará todo las mejoras, funcionalidades o nuevas ideas que
 apliques a la nuevas Pokédex.
 ¡Ánimo! Puedes convertirte en un Maestro Pokémon
