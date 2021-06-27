@@ -1,0 +1,13 @@
+.pokecard {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	cursor: pointer;
+	padding: 1.5rem;
+	border-radius: 5px;
+}
+
+.pokesprite {
+}

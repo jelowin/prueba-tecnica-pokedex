@@ -1,0 +1,8 @@
+.pokegrid {
+	display: grid;
+	overflow: hidden;
+	gap: 2rem;
+	grid-auto-flow: dense;
+	grid-template-rows: 22rem;
+	grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}

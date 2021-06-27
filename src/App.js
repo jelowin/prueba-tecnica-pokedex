@@ -1,7 +1,8 @@
 import PokeGrid from './components/PokeGrid';
+import styles from './App.module.css';
 
 const App = () => (
-	<div className='container'>
+	<div className={styles.container}>
 		<PokeGrid />
 	</div>
 );

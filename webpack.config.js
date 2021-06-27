@@ -12,7 +12,7 @@ module.exports = (env, argv) => {
 			// path.resolve para obtener la ruta absoluta
 			//__dirname te permite saber en que ruta se encuentra el webpack.config.js
 			path: path.resolve(__dirname, 'build'),
-			sourceMapFilename: '[name].[hash:8].map',
+			sourceMapFilename: '[name].[chunkhash:8].map',
 			chunkFilename: '[id].[chunkhash].js'
 		},
 		plugins: [new HtmlWebpackPlugin({ template: 'src/index.html' })],
@@ -42,10 +42,11 @@ module.exports = (env, argv) => {
 						{
 							loader: 'css-loader',
 							options: {
-								modules: true,
-								importLoaders: 1,
-								localIdentName: '[name]_[local]_[hash:base64:5]',
-								sourceMap: false
+								modules: {
+									localIdentName: isProduction
+										? '[hash:base64]'
+										: '[path][name]__[local]'
+								}
 							}
 						}
 					]
@@ -54,7 +55,6 @@ module.exports = (env, argv) => {
 		},
 		devServer: {
 			open: true,
-			overlay: true,
 			compress: true
 		},
 		devtool: 'source-map'
